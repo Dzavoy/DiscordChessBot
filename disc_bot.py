@@ -1,4 +1,4 @@
-from typing import Optional, List
+from typing import Optional
 import discord
 from discord.ext import commands
 from discord import Message
@@ -15,7 +15,7 @@ load_dotenv()
 
 board: Board = chess.Board()
 formatter: BoardFormat = BoardFormat()
-last_board_messages: List[discord.Message] = []
+last_board_messages: list[discord.Message] = []
 
 intents: discord.Intents = discord.Intents.default()
 intents.message_content = True
